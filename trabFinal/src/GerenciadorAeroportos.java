@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
-public class CadastroAeroportos {
+public class GerenciadorAeroportos {
 
     private ArrayList<Aeroporto> lista;
 
-    private CadastroAeroportos() {
+    private GerenciadorAeroportos() {
         lista = new ArrayList<>();
     }
 
-    private static CadastroAeroportos instance;
+    private static GerenciadorAeroportos instance;
 
-    public static CadastroAeroportos getInstance() {
+    public static GerenciadorAeroportos getInstance() {
         if (instance == null)
-            instance = new CadastroAeroportos();
+            instance = new GerenciadorAeroportos();
         return instance;
 
     }
@@ -20,11 +20,6 @@ public class CadastroAeroportos {
     public void inserir(Aeroporto aeroporto) {
         lista.add( aeroporto );
     }
-
-    public void inserir(int umCod, String umNome) {
-        lista.add( new Aeroporto(umCod, umNome) );
-    }
-
     public Aeroporto pesquisar(int cod) {
         for (Aeroporto aeroporto: lista) {
             if (Aeroporto.getCodigo() == cod)

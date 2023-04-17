@@ -1,10 +1,9 @@
-package PACKAGE_NAME;public class GerenciadorDeAeronaves {
-
-public class GerenciadorDeAeronaves {
+import java.util.ArrayList;
+public class GerenciadorAeronaves {
     private ArrayList<Aeronaves> Lista;
-    private StringBuilder rel;
+    private StringBuilder rel; /////??????
 
-    public GerenciadorDeAeronaves(){Lista = new ArrayList<>();}
+    public GerenciadorAeronaves(){Lista = new ArrayList<>();}
 
     public void Inserir(Aeronaves aero){Lista.add(aero);}
 

@@ -21,10 +21,6 @@ import java.util.ArrayList;
             lista.add( rota );
         }
 
-        public void inserir(int umCod, String umNome) {
-            lista.add( new Rotas(umCod, umNome) );
-        }
-
         public Rotas pesquisar(int cod) {
             for (Rotas rota: lista) {
                 if (Rotas.getCodigo() == cod)

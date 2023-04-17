@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
-public class CadastroVoos {
+public class GerenciadorVoos {
 
     private ArrayList<Voos> lista;
 
-    private CadastroVoos() {
+    private GerenciadorVoos() {
         lista = new ArrayList<>();
     }
 
-    private static CadastroVoos instance;
+    private static GerenciadorVoos instance;
 
-    public static CadastroVoos getInstance() {
+    public static GerenciadorVoos getInstance() {
         if (instance == null)
-            instance = new CadastroVoos();
+            instance = new GerenciadorVoos();
         return instance;
 
     }
@@ -20,11 +20,6 @@ public class CadastroVoos {
     public void inserir(Voos voo) {
         lista.add( voo );
     }
-
-    public void inserir(int umCod, String umNome) {
-        lista.add( new Voos(umCod, umNome) );
-    }
-
     public Voos pesquisar(int cod) {
         for (Voos voo: lista) {
             if (Voos.getCodigo() == cod)

@@ -1,28 +1,24 @@
 import java.util.ArrayList;
 
-public class CadastroCias {
+public class GerenciadorCias {
 
     private ArrayList<Companhias> lista;
 
-    private CadastroCias() {
+    private GerenciadorCias() {
         lista = new ArrayList<>();
     }
 
-    private static CadastroCias instance;
+    private static GerenciadorCias instance;
 
-    public static CadastroCias getInstance() {
+    public static GerenciadorCias getInstance() {
         if (instance == null)
-            instance = new CadastroCias();
+            instance = new GerenciadorCias();
         return instance;
 
     }
 
     public void inserir(Companhias cia) {
         lista.add( cia );
-    }
-
-    public void inserir(int umCod, String umNome) {
-        lista.add( new Companhias(umCod, umNome) );
     }
 
     public Companhias pesquisar(int cod) {

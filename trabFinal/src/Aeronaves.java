@@ -1,4 +1,4 @@
-package PACKAGE_NAME;public class Aeronaves {
+public class Aeronaves {
 
     private int capacidade;
     private String nome,cod;
