@@ -1,17 +1,25 @@
 public class Rotas {
 
-    private Companhias cia;
+    private CompanhiasAerias cia;
     private Aeroporto destino;
     private Aeroporto origem;
-    private Aeronaves aeronaves;
+    private Aeronaves aeronave;
     private  int cod;
     private String nome;
-    public Rotas(int umCod, String umNome, Companhias umCia, Aeroporto umdestino, Aeroporto umOrigem, Aeronaves umAeronaves) {
-
+    public Rotas(int umCod, String umNome, CompanhiasAerias umCia, Aeroporto umdestino, Aeroporto umOrigem, Aeronaves umaAeronave) {
+        cia = umCia;
+        destino = umdestino;
+        origem = umOrigem;
+        aeronave = umaAeronave;
+        cod = umCod;
+        nome = umNome;
     }
 
-    public static int getCodigo() {
-        return getCodigo();
-    }
+    public  int getCodigo(){return cod;}
+    public CompanhiasAerias getCompanhia(){return cia;}
+    public Aeroporto getDestino(){return destino;}
+    public Aeroporto getOrigem(){return origem;}
+    public String getNome(){return nome;}
+    public Aeronaves getAeronave(){return aeronave;}
 }
 

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class GerenciadorCias {
 
-    private ArrayList<Companhias> lista;
+    private ArrayList<CompanhiasAerias> lista;
 
     private GerenciadorCias() {
         lista = new ArrayList<>();
@@ -21,9 +21,9 @@ public class GerenciadorCias {
         lista.add( cia );
     }
 
-    public Companhias pesquisar(int cod) {
-        for (Companhias cia: lista) {
-            if (Companhias.getCodigo() == cod)
+    public CompanhiasAerias pesquisar(int cod) {
+        for (CompanhiasAerias cia: lista) {
+            if (CompanhiasAerias.getCodigo() == cod)
                 return cia;
         }
         return null;
@@ -31,7 +31,7 @@ public class GerenciadorCias {
 
     public String toString() {
         StringBuilder aux = new StringBuilder("\nCadastro de Companhias Aéreas\n- - - - - - - - - - -\n");
-        for (Companhias umaCia : lista) {
+        for (CompanhiasAerias umaCia : lista) {
             aux.append( umaCia.toString() + "\n");
         }
         return aux.toString();

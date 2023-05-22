@@ -13,8 +13,9 @@ public class Aeroporto{
         return loc;
     }
 
-    public static int getCodigo() {
-        return getCodigo();
+    public  int getCodigo() {
+        return cod;
     }
+    public String getNome(){return nome;}
 
 }

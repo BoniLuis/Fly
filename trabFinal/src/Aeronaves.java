@@ -1,17 +1,17 @@
 public class Aeronaves {
 
     private int capacidade;
-    private String nome,cod;
-public Aeronaves(String umCod, String umNome,int umaCapaci){
+    private String descrição,cod;
+public Aeronaves(String umCod, String umaDescrição,int umaCapaci){
     cod = umCod;
-    nome = umNome;
+    descrição = umaDescrição;
     capacidade = umaCapaci;
 }
 
 public String getCodigo(){return cod;}
 
 public String toString(){
-    return "nome: " + nome + "  Capacidade: "+ capacidade+ "  Codigo: " + cod;
+    return "Descrição: " + descrição + "  Capacidade: "+ capacidade+ "  Codigo: " + cod;
 }
 
 }
