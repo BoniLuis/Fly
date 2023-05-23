@@ -21,9 +21,9 @@ public class GerenciadorAeroportos {
         lista.add( aeroporto );
     }
     public Aeroporto pesquisar(int cod) {
-        for (Aeroporto aeroporto: lista) {
-            if (Aeroporto.getCodigo() == cod)
-                return aeroporto;
+        for (Aeroporto aero: lista) {
+            if (aero.getCodigo() == cod)
+                return aero;
         }
         return null;
     }

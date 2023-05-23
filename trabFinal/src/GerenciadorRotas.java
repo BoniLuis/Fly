@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
         public Rotas pesquisar(int cod) {
             for (Rotas rota: lista) {
-                if (Rotas.getCodigo() == cod)
+                if (rota.getCodigo() == cod)
                     return rota;
             }
             return null;

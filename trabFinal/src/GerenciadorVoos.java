@@ -22,7 +22,7 @@ public class GerenciadorVoos {
     }
     public Voos pesquisar(int cod) {
         for (Voos voo: lista) {
-            if (Voos.getCodigo() == cod)
+            if (voo.getCodigo() == cod)
                 return voo;
         }
         return null;

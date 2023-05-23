@@ -17,13 +17,13 @@ public class GerenciadorCias {
 
     }
 
-    public void inserir(Companhias cia) {
+    public void inserir(CompanhiasAerias cia) {
         lista.add( cia );
     }
 
     public CompanhiasAerias pesquisar(int cod) {
         for (CompanhiasAerias cia: lista) {
-            if (CompanhiasAerias.getCodigo() == cod)
+            if (cia.getCodigo() == cod)
                 return cia;
         }
         return null;
